@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
 		<!-- SEO? -->
-		<meta name="author" content="BAS Design">
+		<meta name="author" content="Ala Barca">
 		<meta name="description" content="The official website of Taylor Swift - Red (Taylor's Version) out now! Events, Videos, Merch, Releases and more.">
 		<meta name="og:title" content="Taylor Swift">
 		<meta name="og:type" content="website">
@@ -25,10 +25,14 @@
 		<link rel="stylesheet" href="./assets/css/midnights_cover_responsive.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 		<link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<header>
@@ -121,64 +125,6 @@
 			<section id="home">
 				<!-- When more items are added, add next <div> the class of owl-carousel -->
 				<div class="owl-carousel">
-					<div class="ts-banner slide-main">
-						<a href="javascript:" class="midnights-clickthrough">Click for more details</a>
-						<div class="slide-page-1">
-							<div class="slide-text">
-								<div class="album-title">Midnights</div>
-								<div class="album-tracklist-mockup">
-									<ul>
-										<li><span>Track One</span></li>
-										<li><span>Track Two</span></li>
-										<li><span>Track Three</span></li>
-										<li><span>Track Four</span></li>
-										<li><span>Track Five</span></li>
-										<li><span>Track Six</span></li>
-										<li><span>Track Seven</span></li>
-										<li><span>Track Eight</span></li>
-										<li><span>Track Nine</span></li>
-										<li><span>Track Ten</span></li>
-										<li><span>Track Eleven</span></li>
-										<li><span>Track Twelve</span></li>
-										<li><span>Mastermind</span></li>
-									</ul>
-								</div>
-							</div>
-							<div class="slide-figure">
-								<div class="slide-figure-inner">
-									<img src="./assets/img/midnights_taylor.jpg" alt="Midnights by Taylor Swift &ndash; Out 10.21">
-								</div>
-								<div class="pseudo-button" role="button">Click for more details</div>
-							</div>
-						</div>
-						<div class="slide-page-2">
-							<a href="javascript:" class="midnights-close" title="Close"></a>
-							<div class="video-container">
-								<video src="https://cache.umusic.com/_sites/_halo/zrskt/nwff/dhtsm.mp4" loop muted id="desktop-video" class="desktop">Your browser does not support HTML5 videos.</video>
-								<video src="https://cache.umusic.com/_sites/_halo/zrskt/nwff/mhtsm.mp4" loop muted id="mobile-video" class="mobile">Your browser does not support HTML5 videos.</video>
-								<a href="https://taylor.lnk.to/taylorswiftmidnights" target="_blank">Click to presave/preorder</a>
-							</div>
-						</div>
-						<script>
-							$(document).ready(function(){
-								$(".midnights-clickthrough").click(function(){
-									$(this).hide(0, function(){
-										$(".slide-page-2").fadeIn(500)
-										$(".slide-page-2 video").trigger("play")
-									});
-								})
-								$(".midnights-close").click(function(){
-									$(".slide-page-2").fadeOut(500, function(){
-										$(".midnights-clickthrough").show()
-										var videoBGDesktop = document.getElementById("desktop-video");
-										var videoBGMobile = document.getElementById("mobile-video");
-										videoBGDesktop.pause(); videoBGDesktop.currentTime = 0;
-										videoBGMobile.pause(); videoBGMobile.currentTime = 0;
-									});
-								})
-							})
-						</script>
-					</div>
 					<div class="ts-banner slide-1">
 						<a href="https://taylor.lnk.to/redtaylorsversionWE" target="_blank">Get "Red (Taylor's Version)" NOW</a>
 					</div>
@@ -187,35 +133,6 @@
 							<img src="./assets/img/ts_carolina_desktop.jpg" alt="Carolina &ndash; Out Now" class="desktop">
 							<img src="./assets/img/ts_carolina_desktop.jpg" alt="Carolina &ndash; Out Now" class="mobile">
 						</a>
-					</div>
-					<div class="ts-banner slide-2">
-						<div class="slide-layer layer-1">
-							<div class="layer-1-header">
-								"I Bet You Think About Me" Video &ndash; Out Now
-							</div>
-							<div class="layer-1-body">
-								Click to watch
-							</div>
-						</div>
-						<a href="http://www.youtube.com/watch?v=5UMCrq-bBCg" class="fancybox"></a>
-					</div>
-					<div class="ts-banner slide-3">
-						<div class="slide-layer layer-1">
-							<div class="layer-1-header">
-								All Too Well: The Short Film
-							</div>
-							<div class="layer-1-body">
-								Click to watch
-							</div>
-						</div>
-						<a href="https://www.youtube.com/watch?v=tollGa3S0o8" class="fancybox"></a>
-					</div>
-					<div class="ts-banner slide-4">
-						<a href="https://store.taylorswift.com/pages/sms-signup" target="_blank">Get SMS Updates</a>
-						<div class="sms-cta">
-							<div class="sms-cta-header">Get SMS Updates</div>
-							<div class="sms-cta-subtitle">Fill the signup form clicking here!</div>
-						</div>
 					</div>
 				</div>
 			</section>
