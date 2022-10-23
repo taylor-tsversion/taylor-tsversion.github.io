@@ -331,6 +331,7 @@ main {
 	background-color: #58618c;
 	color: #ebe9e3;
 	font-size: 18px;
+	position: absolute;
 	width: 25px;
 	height: 25px;
 	outline: none;
