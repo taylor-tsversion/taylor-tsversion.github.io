@@ -188,3 +188,33 @@ header .empty-posts .empty {
 	transform: rotate(-180deg) translateY(-25%);
 	top: 12.5%;
 }
+
+.community-actions-mobile {
+	display: none;
+}
+.community-dash {
+	background: #ae9fb1;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 700;
+	padding: 8px;
+	width: 100%;
+	max-width: 173px;
+	height: 76px;
+	position: absolute;
+	left: 45.5px;
+	bottom: 0px;
+	transition: .5s linear;
+	z-index: 2;
+}
+.community-dash .toggler {
+	background-image: url("../../img/midnights/dashboard_arrow_v2.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: -22px;
+	width: 173px;
+	left: 0;
+	height: 22px;
+	cursor: pointer;
+}
