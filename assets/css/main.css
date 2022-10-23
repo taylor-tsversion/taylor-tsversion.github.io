@@ -327,13 +327,21 @@ main {
 	height: 100%;
 	z-index: 1;
 }
+.owl-nav {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+}
 #home .owl-nav button, #news .owl-nav button, #photos .owl-nav button {
 	background-color: #58618c;
 	color: #ebe9e3;
-	font-size: 18px;
+	border: none;
+	font-size: 24px;
 	position: absolute;
-	width: 25px;
-	height: 25px;
+	width: 36px;
+	height: 36px;
 	outline: none;
 }
 #home .owl-nav button span, #news .owl-nav button span {
