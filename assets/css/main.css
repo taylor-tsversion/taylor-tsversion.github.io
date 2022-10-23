@@ -86,3 +86,56 @@ header .empty-posts .empty {
 	background-color: #58618c;
 	color: #ebe9e3;
 }
+.navbar-wrapper {
+	background-image: url("../../img/midnights/header_bg.png");
+	background-size: cover;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 700;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: space-between;
+	justify-content: space-between;
+	padding: 16px 24px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 4px rgb(0 0 0 / 5%);
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+}
+.navbar-wrapper:before {
+	content: "";
+	background-color: rgba(174, 159, 177, .2);
+	width: 70px;
+	height: 250%;
+	position: absolute;
+	left: 189.4995px;
+	transform: rotate(45deg);
+}
+.navbar-wrapper:after {
+	content: "";
+	background-color: rgba(174, 159, 177, .1);
+	width: 20px;
+	height: 250%;
+	position: absolute;
+	left: 284.24925px;
+	transform: rotate(45deg);
+}
+.navbar-wrapper a.ts-logo-wrapper {
+	width: 217px;
+	height: 41px;
+	display: inline-block;
+	z-index: 2;
+}
+.navbar-wrapper .ts-logo-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 2;
+}
+.navbar-wrapper .navbar {
+	font-size: 20px;
+	text-transform: capitalize;
+	text-align: right;
+}
