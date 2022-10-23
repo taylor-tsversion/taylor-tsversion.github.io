@@ -205,6 +205,9 @@ header .empty-posts .empty {
 	transition: .5s linear;
 	z-index: 2;
 }
+.community-dash.dash-open {
+	bottom: -76px;
+}
 .community-dash .toggler {
 	background-image: url("/assets/img/dashboard_arrow_v2.png");
 	background-position: 0 0;
@@ -217,10 +220,7 @@ header .empty-posts .empty {
 	height: 22px;
 	cursor: pointer;
 }
-.community-dash.dash-open {
-	bottom: -76px;
-}
-.community-dash:hover:after, .dash-open:after {
+.community-dash .toggler:hover:after, .dash-open .toggler {
 	background-position: 0 -28px;
 }
 .community-dash ul {
