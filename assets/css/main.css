@@ -188,12 +188,11 @@ header .empty-posts .empty {
 	transform: rotate(-180deg) translateY(-25%);
 	top: 12.5%;
 }
-
 .community-actions-mobile {
 	display: none;
 }
 .community-dash {
-	background: #ae9fb1;
+	background-color: #ae9fb1;
 	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-weight: 700;
 	padding: 8px;
@@ -207,7 +206,7 @@ header .empty-posts .empty {
 	z-index: 2;
 }
 .community-dash .toggler {
-	background-image: url("../../img/midnights/dashboard_arrow_v2.png");
+	background-image: url("/assets/img/dashboard_arrow_v2.png");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -217,4 +216,36 @@ header .empty-posts .empty {
 	left: 0;
 	height: 22px;
 	cursor: pointer;
+}
+.community-dash.dash-open {
+	bottom: -76px;
+}
+.community-dash:hover:after, .dash-open:after {
+	background-position: 0 -28px;
+}
+.community-dash ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.community-dash ul li {
+	margin: 0;
+}
+.community-dash ul li:first-child {
+	margin-bottom: 4px;
+}
+.community-dash ul li .community-btn {
+	background-color: #58618c;
+	color: #ebe9e3;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 4px;
+	display: block;
+	transition: .5s;
+}
+.community-dash ul li .community-btn:hover {
+	background-color: #111d28;
+	color: #fff;
 }
