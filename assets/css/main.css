@@ -247,3 +247,41 @@ header .empty-posts .empty {
 	background-color: #111d28;
 	color: #fff;
 }
+main {
+	margin-top: 74px;
+}
+.ts-banner {
+	min-height: calc(100vh - 74px);
+	position: relative;
+	overflow: hidden;
+}
+.slide-1 {
+	background-image: url("/assets/img/midnights_hero.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.slide-1:after {
+	content: "";
+	background-image: url("/assets/img/night_clouds_bg.jpeg");
+	background-size: cover;
+	background-position: center;
+	opacity: .5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.slide-1 a {
+	background-image: url("/assets/img/midnights_logo.png");
+	background-size: 100%;
+	text-indent: -9999px;
+	position: absolute;
+	left: 62.5%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 451px;
+	height: 141px;
+	display: inline-block;
+	z-index: 1;
+}
