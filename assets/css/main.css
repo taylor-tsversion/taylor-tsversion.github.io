@@ -220,7 +220,7 @@ header .empty-posts .empty {
 	height: 22px;
 	cursor: pointer;
 }
-.community-dash .toggler:hover:after, .dash-open .toggler {
+.community-dash .toggler:hover, .dash-open .toggler {
 	background-position: 0 -28px;
 }
 .community-dash ul {
