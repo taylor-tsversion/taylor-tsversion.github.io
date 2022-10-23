@@ -87,7 +87,7 @@ header .empty-posts .empty {
 	color: #ebe9e3;
 }
 .navbar-wrapper {
-	background-image: url("../../img/midnights/header_bg.png");
+	background-image: url("/assets/img/header_bg.png");
 	background-size: cover;
 	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-weight: 700;
@@ -123,19 +123,68 @@ header .empty-posts .empty {
 	transform: rotate(45deg);
 }
 .navbar-wrapper a.ts-logo-wrapper {
+	position: relative;
 	width: 217px;
 	height: 41px;
 	display: inline-block;
 	z-index: 2;
+	overflow: hidden;
 }
 .navbar-wrapper .ts-logo-wrapper img {
+	margin-top: -31px;
+	position: absolute;
+	top: 50%;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
 	z-index: 2;
 }
 .navbar-wrapper .navbar {
 	font-size: 20px;
 	text-transform: capitalize;
 	text-align: right;
+}
+.navbar-wrapper .navbar ul {
+	list-style-type: none;
+	margin: 0;
+}
+.navbar-wrapper .navbar ul:not(.community-actions-mobile) {
+	padding: 0;
+}
+.navbar-wrapper .navbar ul li {
+	letter-spacing: .5px;
+	display: inline-block;
+	margin-right: 18px;
+}
+.navbar-wrapper .navbar ul li:last-child {
+	margin-right: 0;
+}
+.navbar-wrapper .navbar ul li a {
+	color: #72a4bd;
+	text-decoration: none;
+}
+.navbar-wrapper .navbar ul li a:hover {
+	color: #ae9fb1;
+}
+.navbar-wrapper .navbar ul li a.dropdown {
+	padding-right: 16px;
+	position: relative;
+}
+.navbar-wrapper .navbar ul li a.dropdown:after {
+	content: "";
+	border: solid 4px;
+	border-color: #72a4bd transparent transparent transparent;
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-25%);
+}
+.navbar-wrapper .navbar ul li a.dropdown:hover:after {
+	border-color: #ae9fb1 transparent transparent transparent;
+}
+.dropdown-open .navbar-wrapper .navbar a.dropdown {
+	color: #ae9fb1;
+}
+.dropdown-open .navbar-wrapper .navbar a.dropdown:after {
+	border-color: #ae9fb1 transparent transparent transparent;
+	transform: rotate(-180deg) translateY(-25%);
+	top: 12.5%;
 }
