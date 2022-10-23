@@ -312,8 +312,18 @@ main {
 	max-width: 398.99px;
 	z-index: 1;
 }
-.slide-2 .slide-layer.layer-1 .layer-1-header, .slide-3 .slide-layer.layer-1 .layer-1-header {
+.slide-2 .slide-layer.layer-1 .layer-1-header {
 	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-size: 40px;
 	font-weight: 700;
+	margin-bottom: 10px;
+}
+.slide-2 a {
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
 }
