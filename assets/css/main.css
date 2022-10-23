@@ -12,3 +12,77 @@ body {
 	font-size: 16px;
 	margin: 0;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,  footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+header div.dropdown {
+	background-image: url("../../img/midnights/wood_bg.jpg");
+	background-size: cover;
+	color: #ebe9e3;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .5s ease-in-out;
+	z-index: 3;
+	position: relative;
+}
+header.dropdown-open div.dropdown {
+	max-height: 500px;
+}
+.dropdown-inner {
+	border-bottom: solid 3px #111d28;
+	padding: .5rem;
+}
+header div.dropdown .dropdown-inner:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+header .empty-posts .featured-posts {
+	display: none;
+}
+header .empty-posts .empty {
+	display: block;
+	width: 100%;
+	max-width: 708px;
+	float: left;
+}
+.community-actions {
+	border-left: solid transparent 1px;
+	width: 100%;
+	max-width: 192px;
+	display: block;
+	float: right;
+}
+.community-actions ul {
+	list-style-type: none;
+	padding: 0 .5rem 0 1.25rem;
+	margin: 0;
+}
+.community-actions li:not(.community-actions li:last-child) {
+	margin-bottom: .5rem;
+}
+.community-actions li .community-btn {
+	background-color: #72a4bd;
+	color: #111d28;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: .5rem;
+	display: block;
+	transition: .5s;
+}
+.community-actions li .community-btn:hover {
+	background-color: #58618c;
+	color: #ebe9e3;
+}
