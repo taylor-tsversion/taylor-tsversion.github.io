@@ -393,7 +393,7 @@ div.owl-dots button.owl-dot.active {
 	padding: 48px 44px;
 }
 #about h1 {
-	font-family: 'neue-haas-grotesk-display';
+	font-family: 'neue-haas-grotesk-display', sans-serif;
 	font-size: 40px;
 	font-weight: 300;
 	margin: 0 0 16px 0;
@@ -417,7 +417,7 @@ div.owl-dots button.owl-dot.active {
 	max-width: 550px;
 }
 .bio-wrapper h2 {
-	font-family: 'neue-haas-grotesk-display';
+	font-family: 'neue-haas-grotesk-display', sans-serif;
 	font-weight: 700;
 	margin: 0;
 }
@@ -426,7 +426,9 @@ div.owl-dots button.owl-dot.active {
 	margin-bottom: 0;
 }
 .small-text {
+	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-size: .85rem;
+	font-weight: 700;
 	margin-top: .5rem;
 }
 .small-text a {
