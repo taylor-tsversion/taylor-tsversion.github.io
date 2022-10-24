@@ -245,7 +245,6 @@ header .empty-posts .empty {
 }
 .community-dash ul li .community-btn:hover {
 	background-color: #111d28;
-	color: #fff;
 }
 main {
 	margin-top: 74px;
@@ -362,4 +361,22 @@ main {
 }
 #home .owl-nav button.owl-next, #news .owl-nav button.owl-next, #photos .owl-nav button.owl-next {
 	right: 16px;
+}
+.owl-dots {
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	width: 100%;
+}
+div.owl-dots button.owl-dot {
+	background-color: #ebe9e3;
+	border-radius: 50%;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+	z-index: 1;
+}
+div.owl-dots button.owl-dot.active {
+	background-color: #ae9fb1
 }
