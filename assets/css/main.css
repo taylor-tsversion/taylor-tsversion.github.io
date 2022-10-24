@@ -388,7 +388,7 @@ div.owl-dots button.owl-dot.active {
 #about {
 	background-image: url("/assets/img/about_bg.jpg");
 	background-size: cover;
-	background-position: center top;
+	background-position: left top;
 	border-top: 8px solid #b9a079;
 	padding: 48px 44px;
 }
@@ -399,11 +399,11 @@ div.owl-dots button.owl-dot.active {
 	margin: 0 0 16px 0;
 }
 #about h1 a {
-	color: #ebe9e3;
+	color: #111d28;
 	text-decoration: none;
 }
 #about h1 a span {
-	color: #ae9fb1;
+	color: #58618c;
 	font-weight: 700;
 	font-style: italic;
 	display: inline-block;
