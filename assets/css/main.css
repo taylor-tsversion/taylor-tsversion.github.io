@@ -184,7 +184,7 @@ header .empty-posts .empty {
 .dropdown-open .navbar-wrapper .navbar a.dropdown:after {
 	border-color: #ae9fb1 transparent transparent transparent;
 	transform: rotate(-180deg) translateY(-25%);
-	top: 12.5%;
+	top: 21.5%;
 }
 .community-actions-mobile {
 	display: none;
@@ -333,6 +333,7 @@ main {
 	left: 0;
 	transform: translateY(-50%);
 	width: 100%;
+	height: 40px;
 }
 #home .owl-nav button, #news .owl-nav button, #photos .owl-nav button {
 	background-color: #58618c;
@@ -340,8 +341,8 @@ main {
 	border: none;
 	font-size: 24px;
 	position: absolute;
-	width: 36px;
-	height: 36px;
+	width: 40px;
+	height: 40px;
 	outline: none;
 }
 #home .owl-nav button span, #news .owl-nav button span {
@@ -349,5 +350,11 @@ main {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	height: 25px;
+	height: 32px;
+}
+#home .owl-nav button.owl-prev, #news .owl-nav button.owl-prev, #photos .owl-nav button.owl-prev {
+	left: 16px;
+}
+#home .owl-nav button.owl-next, #news .owl-nav button.owl-next, #photos .owl-nav button.owl-next {
+	right: 16px;
 }
