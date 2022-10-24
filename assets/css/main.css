@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/yjx8jsv.css");
-@import url("../../icomoon/style.css");
+@import url("/assets/icomoon/style.css");
 @font-face{font-family:neue-haas-grotesk-text;src:url(https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/31808c/00000000000000007735bb70/30/l?subset_id=2&fvd=i9&v=3) format("woff2"),url(https://use.typekit.net/af/31808c/00000000000000007735bb70/30/d?subset_id=2&fvd=i9&v=3) format("woff"),url(https://use.typekit.net/af/31808c/00000000000000007735bb70/30/a?subset_id=2&fvd=i9&v=3) format("opentype");font-weight:900;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/144886/00000000000000007735bb55/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/144886/00000000000000007735bb55/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/144886/00000000000000007735bb55/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/2807c7/00000000000000007735bb48/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/2807c7/00000000000000007735bb48/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/2807c7/00000000000000007735bb48/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/384d9b/00000000000000007735bb6a/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/384d9b/00000000000000007735bb6a/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/384d9b/00000000000000007735bb6a/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/c906c2/00000000000000007735bb6e/30/l?subset_id=2&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/c906c2/00000000000000007735bb6e/30/d?subset_id=2&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/c906c2/00000000000000007735bb6e/30/a?subset_id=2&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/2b59e1/00000000000000007735bb53/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/2b59e1/00000000000000007735bb53/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/2b59e1/00000000000000007735bb53/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/fcc1c9/00000000000000007735bb6c/30/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/fcc1c9/00000000000000007735bb6c/30/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/fcc1c9/00000000000000007735bb6c/30/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}
 * {
 	box-sizing: border-box;
@@ -422,14 +422,14 @@ div.owl-dots button.owl-dot.active {
 	margin: 0;
 }
 .bio-wrapper p {
-	margin-top: .5rem;
+	margin-top: 8px;
 	margin-bottom: 0;
 }
 .small-text {
 	font-family: "neue-haas-grotesk-display", sans-serif;
-	font-size: .85rem;
+	font-size: 13.6px;
 	font-weight: 700;
-	margin-top: .5rem;
+	margin-top: 8px;
 }
 .small-text a {
 	color: #58618c;
