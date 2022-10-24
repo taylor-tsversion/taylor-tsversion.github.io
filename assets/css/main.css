@@ -389,6 +389,6 @@ div.owl-dots button.owl-dot.active {
 	background-image: url("/assets/img/about_bg.jpg");
 	background-size: cover;
 	background-position: center top;
-	border-top: .5rem solid #ae8651;
-	padding: 2rem;
+	border-top: 8px solid #b9a079;
+	padding: 48px 44px;
 }
