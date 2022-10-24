@@ -333,16 +333,18 @@ main {
 	transform: translateY(-50%);
 	width: 100%;
 	height: 40px;
+	pointer-events: none;
 }
 #home .owl-nav button, #news .owl-nav button, #photos .owl-nav button {
 	background-color: #58618c;
 	color: #ebe9e3;
 	border: none;
+	outline: none;
 	font-size: 24px;
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	outline: none;
+	pointer-events: all;
 	transition: .5s;
 }
 #home .owl-nav button:hover, #news .owl-nav button:hover, #photos .owl-nav button:hover {
