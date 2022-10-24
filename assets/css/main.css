@@ -346,7 +346,7 @@ main {
 	outline: none;
 	transition: .5s;
 }
-#home .owl-nav button, #news .owl-nav button, #photos .owl-nav button {
+#home .owl-nav button:hover, #news .owl-nav button:hover, #photos .owl-nav button:hover {
 	background-color: #72a4bd;
 	color: #111d28;
 }
