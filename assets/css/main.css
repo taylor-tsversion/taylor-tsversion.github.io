@@ -392,3 +392,47 @@ div.owl-dots button.owl-dot.active {
 	border-top: 8px solid #b9a079;
 	padding: 48px 44px;
 }
+#about h1 {
+	font-family: 'neue-haas-grotesk-display';
+	font-size: 40px;
+	font-weight: 300;
+	margin: 0 0 16px 0;
+}
+#about h1 a {
+	color: #ebe9e3;
+	text-decoration: none;
+}
+#about h1 a span {
+	color: #ae9fb1;
+	font-weight: 700;
+	font-style: italic;
+	display: inline-block;
+}
+.bio-wrapper {
+	background-color: #ebe9e3;
+	color: #111d28;
+	border: solid 1px rgba(17,29,40,.25);
+	box-shadow: 0 0 8px rgba(0,0,0,.125);
+	padding: 28px;
+	max-width: 550px;
+}
+.bio-wrapper h2 {
+	font-family: 'neue-haas-grotesk-display';
+	font-weight: 700;
+	margin: 0;
+}
+.bio-wrapper p {
+	margin-top: .5rem;
+	margin-bottom: 0;
+}
+.small-text {
+	font-size: .85rem;
+	margin-top: .5rem;
+}
+.small-text a {
+	color: #58618c;
+	text-decoration: none;
+}
+.small-text a:hover {
+	text-decoration: underline 1px #58618c;
+}
