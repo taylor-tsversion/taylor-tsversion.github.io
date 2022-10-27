@@ -392,7 +392,7 @@ div.owl-dots button.owl-dot.active {
 	border-top: 8px solid #b9a079;
 	padding: 48px 44px;
 }
-#about h1 {
+#about h1, #events h1 {
 	font-family: 'neue-haas-grotesk-display', sans-serif;
 	font-size: 40px;
 	font-weight: 300;
@@ -402,13 +402,13 @@ div.owl-dots button.owl-dot.active {
 	color: #111d28;
 	text-decoration: none;
 }
-#about h1 a span {
+#about h1 a span, #events h1 span {
 	color: #58618c;
 	font-weight: 700;
 	font-style: italic;
 	display: inline-block;
 }
-.bio-wrapper {
+.bio-wrapper, .note-wrapper .note {
 	background-color: #ebe9e3;
 	color: #111d28;
 	border: solid 1px rgba(17,29,40,.25);
@@ -437,4 +437,13 @@ div.owl-dots button.owl-dot.active {
 }
 .small-text a:hover {
 	text-decoration: underline 1px #58618c;
+}
+.note-wrapper {
+	max-width: 550px;
+}
+.note-wrapper .note {
+	max-width: none;
+}
+.note-wrapper .note p.first {
+	margin-top: 0;
 }
