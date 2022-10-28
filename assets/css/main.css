@@ -448,6 +448,12 @@ div.owl-dots button.owl-dot.active {
 	max-width: 550px;
 	margin-left: auto;
 }
+.note-wrapper h1 {
+	color: #ebe9e3;
+}
+#events h1 span {
+	color: #ae9fb1;
+}
 .note-wrapper .note {
 	max-width: none;
 }
