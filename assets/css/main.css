@@ -421,7 +421,7 @@ div.owl-dots button.owl-dot.active {
 	font-weight: 700;
 	margin: 0;
 }
-.bio-wrapper p {
+.bio-wrapper p, .note-wrapper p {
 	margin-top: 8px;
 	margin-bottom: 0;
 }
