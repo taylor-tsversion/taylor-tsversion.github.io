@@ -441,7 +441,7 @@ div.owl-dots button.owl-dot.active {
 #events {
 	background-image: url("/assets/img/events_bg.jpg");
 	background-size: cover;
-	background-position: left top;
+	background-position: right top;
 	padding: 48px 44px;
 }
 .note-wrapper {
