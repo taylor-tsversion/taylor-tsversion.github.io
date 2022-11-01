@@ -156,14 +156,7 @@
 			<section id="events">
 				<div class="note-wrapper">
 					<h1>Taylor Swift <span>Live</h1>
-					<div class="note">
-						<p class="first">I love coming on here to tell you good news, or to share a new project with you. It’s not my favorite thing in the world to have to tell you news I’m sad about. I’m so sorry, but I cannot reschedule the shows that we’ve postponed. Although refunds have been available since we first postponed the Lover Fest shows, many of you hung onto your tickets and I too hung onto the idea that we could reschedule.</p>
-						<p>This is an unprecedented pandemic that has changed everyone’s plans and no one knows what the touring landscape is going to look like in the near future. I’m so disappointed that I won’t be able to see you in person as soon as I wanted to. I miss you terribly and can’t wait til we can all safely be at shows together again.</p>
-						<p>&ndash;Taylor Swift</p>
-						<div class="small-text">
-							<p class="first">*<a href="https://blog.ticketmaster.com/refund-credit-canceled-postponed-rescheduled-events/">Ticketmaster</a> will process your refund automatically for U.S. dates. You should expect to receive your refund in as soon as 30 days.</p>
-							<p>*Tickets Policy and instructions for Brazil dates can be found at <a href="https://informativos.ticketsforfun.com.br/">informativos.ticketsforfun.com.br</a></p>
-						</div>
+					<div class="events-container">
 					</div>
 				</div>
 			</section>
@@ -576,6 +569,26 @@
 					mouseDrag: false,
 					//autoplay: true,
 					//autoplayTimeout: 10000,
+				})
+				$.ajax({
+					url: "/api/tour_dates.json",
+					type: "data/json",
+					success: function(data) {
+						$.each(data, function(key, value){
+							var events = '';
+							events += '<div class="tour-date">';
+							events += '<div class="tour-date-inner">';
+							$(this).find(".tour-date-inner").append('<div class="event-date">' + value.date + '</div>');
+							$(this).find(".tour-date-inner").append('<div class="event-venue">' + value.venue + '</div>');
+							$(this).find(".tour-date-inner").append('<div class="event-city">' + value.city + '</div>');
+							$(this).find(".tour-date-inner").append('<div class="event-reserve"><a href="https://verifiedfan.ticketmaster.com/TaylorSwiftTix">Sign Up</a></div>');
+							$(this).find(".tour-date-inner").append('<div class="event-info"><a href="' + value.urlI + '">More Info</a></div>');
+							$(".events-container").html(events)
+						})
+					},
+					error: function(){
+						alert("fuck it, it does not work")
+					}
 				})
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
