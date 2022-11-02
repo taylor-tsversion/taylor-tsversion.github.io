@@ -477,14 +477,14 @@ div.owl-dots button.owl-dot.active {
 #news .owl-item {
 	padding: 0 16px;
 }
-#news .owl-prev {
-	left: -32px;
+#news .owl-nav button.owl-prev {
+	left: -48px;
 }
-#news .owl-next {
-	right: -32px;
+#news .owl-nav button.owl-next {
+	right: -48px;
 }
 #news .news-item {
-	box-shadow: 0 0 16px rgba(17,29,40,.5)
+	box-shadow: 0 0 16px rgba(17,29,40,.5);
 	/* width: 243.062px;
 	max-width: 243.062px; */
 	width: 100%;
