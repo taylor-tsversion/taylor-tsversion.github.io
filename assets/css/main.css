@@ -87,6 +87,7 @@ header .empty-posts .empty {
 	color: #ebe9e3;
 }
 .navbar-wrapper {
+	background-color: #111d28;
 	background-image: url("/assets/img/header_bg.png");
 	background-size: cover;
 	font-family: "neue-haas-grotesk-display", sans-serif;
@@ -511,7 +512,7 @@ div.owl-dots button.owl-dot.active {
 	font-weight: 700;
 	text-transform: capitalize;
 	text-overflow: ellipsis;
-	letter-spacing: .75px;
+	letter-spacing: .625px;
 	white-space: nowrap;
 	margin: 0;
 	overflow: hidden;
