@@ -558,3 +558,50 @@ div.owl-dots button.owl-dot.active {
 .news-link a:hover {
 	opacity: .75;
 }
+#videos {
+	border-top: .5rem solid #ae9fb1;
+}
+.video-thumb {
+	padding-top: 56.25%;
+	position: relative;
+}
+.video-thumb img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.video-thumb .video-title {
+	background-color: rgba(17,29,40,.375);
+	color: #ebe9e3;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-title-inner {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.video-title-inner h2 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: .5rem;
+}
+.play-video {
+	background-color: #58618c;
+	color: #ebe9e3;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	padding: 8px 16px 8px 32px;
+	position: relative;
+	display: inline-block;
+	transition: .5s;
+}
