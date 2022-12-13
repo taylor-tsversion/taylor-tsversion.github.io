@@ -588,9 +588,28 @@ div.owl-dots button.owl-dot.active {
 	transform: translate(-50%,-50%);
 	text-align: center;
 }
-.video-title-inner h2 {
+.video-1 .video-title-inner {left: 15.5%}
+.video-2 .video-title-inner {left: 81.25%}
+.video-3 .video-title-inner {left: 37.5%}
+.video-4 .video-title-inner, .video-10 .video-title-inner {left: 50%}
+.video-5 .video-title-inner {left: 75%}
+.video-6 .video-title-inner, .video-8 .video-title-inner, .video-14 .video-title-inner {left: 25%}
+.video-7 .video-title-inner {
+	left: 30%;
+	width: 35%;
+}
+.video-8 .video-title-inner {width: 25%}
+.video-9 .video-title-inner {left: 80%}
+.video-11 .video-title-inner {
+	left: 65%;
+	width: 30%;
+}
+.video-12 .video-title-inner {left: 20%}
+.video-13 .video-title-inner {left: 21.5%}
+.video-title-inner .video-name {
+	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-size: 2.25rem;
-	font-weight: 400;
+	font-weight: 700;
 	margin: 0;
 	margin-bottom: .5rem;
 }
@@ -602,6 +621,18 @@ div.owl-dots button.owl-dot.active {
 	letter-spacing: .5px;
 	padding: 8px 16px 8px 32px;
 	position: relative;
+	display: inline-block;
+	transition: .5s;
+}
+.play-video:before {
+	content: "";
+	border-style: solid;
+	border-width: 5px 0px 5px 8px;
+	border-color: transparent transparent transparent #ebe9e3;
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	margin-top: -5px;
 	display: inline-block;
 	transition: .5s;
 }
