@@ -559,7 +559,7 @@ div.owl-dots button.owl-dot.active {
 	opacity: .75;
 }
 #videos {
-	border-top: .5rem solid #ae9fb1;
+	border-top: 8px solid #ae9fb1;
 }
 .video-thumb {
 	padding-top: 56.25%;
@@ -608,10 +608,10 @@ div.owl-dots button.owl-dot.active {
 .video-13 .video-title-inner {left: 21.5%}
 .video-title-inner .video-name {
 	font-family: "neue-haas-grotesk-display", sans-serif;
-	font-size: 2.25rem;
+	font-size: 36px;
 	font-weight: 700;
 	margin: 0;
-	margin-bottom: .5rem;
+	margin-bottom: 8px;
 }
 .play-video {
 	background-color: #58618c;
@@ -630,7 +630,7 @@ div.owl-dots button.owl-dot.active {
 	border-width: 5px 0px 5px 8px;
 	border-color: transparent transparent transparent #ebe9e3;
 	position: absolute;
-	left: 1rem;
+	left: 16px;
 	top: 50%;
 	margin-top: -5px;
 	display: inline-block;
