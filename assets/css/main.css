@@ -13,7 +13,7 @@ body {
 	margin: 0;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,  footer, header, hgroup, main, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
 	display: block;
 }
 header {
@@ -752,9 +752,9 @@ div.fancybox-progress {
 .follow-cta {
 	background-color: #363f48;
 	border-top: 5px solid #58618c;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-size: 24px;
 	font-weight: 700;
-	font-size: 1.25rem;
-	text-transform: uppercase;
 	text-align: center;
 	padding: 16px;
 }
