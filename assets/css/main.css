@@ -379,11 +379,12 @@ div.owl-dots button.owl-dot {
 	width: 16px;
 	height: 16px;
 	z-index: 1;
+	transition: .5s;
 }
 div.owl-dots button.owl-dot:last-child {
 	margin-right: 0;
 }
-div.owl-dots button.owl-dot.active {
+div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	background-color: #ae9fb1
 }
 #about {
@@ -635,4 +636,28 @@ div.owl-dots button.owl-dot.active {
 	margin-top: -5px;
 	display: inline-block;
 	transition: .5s;
+}
+.play-video:hover {
+	background-color: #72a4bd;
+	color: #111d28;
+}
+.play-video:hover:before {
+	border-color: transparent transparent transparent #111d28;
+}
+.embed {
+	display: none;
+}
+.embed-responsive {
+	padding-top: 56.25%;
+	position: relative;
+}
+.embed-responsive iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.embed-responsive span {
+	display: none;
 }
