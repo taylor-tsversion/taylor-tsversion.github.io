@@ -746,3 +746,20 @@ div.fancybox-thumbs__list a:before {
 div.fancybox-progress {
 	background-color: #72a4bd;
 }
+#photos .owl-nav {
+	top: 44.25%;
+}
+.follow-cta {
+	background-color: #363f48;
+	border-top: 5px solid #58618c;
+	font-weight: 700;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 16px;
+}
+.follow-cta a {
+	color: #72a4bd;
+	text-decoration: none;
+}
+.follow-cta a:hover {opacity: .75}
