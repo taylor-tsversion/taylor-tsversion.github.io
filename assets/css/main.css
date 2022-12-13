@@ -661,3 +661,35 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 .embed-responsive span {
 	display: none;
 }
+.owl-nav {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+button.owl-prev {
+	position: absolute;
+	left: 1rem;
+	transition: .5s;
+}
+button.owl-next {
+	position: absolute;
+	right: 1rem;
+	transition: .5s;
+}
+button.owl-prev:hover, button.owl-next:hover {
+	opacity: .5;
+}
+button.owl-prev a, button.owl-next a {
+	background-size: contain;
+	width: 67px;
+	height: 67px;
+	display: inline-block;
+}
+button.owl-prev a {
+	background-image: url("/assets/img/arrow_left.png");
+}
+button.owl-next a {
+	background-image: url("/assets/img/arrow_right.png");
+}
