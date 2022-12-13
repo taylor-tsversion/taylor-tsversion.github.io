@@ -683,6 +683,10 @@ button.owl-prev:hover, button.owl-next:hover {
 }
 button.owl-prev a, button.owl-next a {
 	background-size: contain;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -16.75px;
 	width: 67px;
 	height: 67px;
 	display: inline-block;
