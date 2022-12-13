@@ -668,6 +668,9 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	transform: translateY(-50%);
 	width: 100%;
 }
+.owl-nav button {
+	pointer-events: all;
+}
 button.owl-prev {
 	position: absolute;
 	left: 1rem;
@@ -684,7 +687,6 @@ button.owl-prev:hover, button.owl-next:hover {
 button.owl-prev a, button.owl-next a {
 	background-size: contain;
 	position: absolute;
-	left: 0;
 	top: 50%;
 	margin-top: -16.75px;
 	width: 67px;
@@ -693,7 +695,54 @@ button.owl-prev a, button.owl-next a {
 }
 button.owl-prev a {
 	background-image: url("/assets/img/arrow_left.png");
+	left: 0;
 }
 button.owl-next a {
 	background-image: url("/assets/img/arrow_right.png");
+	right: 0;
+}
+#photos {
+	border-top: 8px solid #58618c;
+	border-bottom: 8px solid #72a4bd;
+}
+.instagram, .tumblr {
+	background-color: #363f48;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.instagram:after, .tumblr:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.instagram:hover li, .tumblr:hover li {
+	opacity: .5;
+}
+.instagram li, .tumblr li {
+	width: 25%;
+	float: left;
+	transition: .5s;
+}
+.instagram li:hover, .tumblr li:hover {
+	opacity: 1;
+}
+.instagram li a, .tumblr li a {
+	padding-top: 100%;
+	position: relative;
+	display: block;
+}
+.instagram li a img, .tumblr li a img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+div.fancybox-thumbs__list a:before {
+	border-color: #72a4bd;
+}
+div.fancybox-progress {
+	background-color: #72a4bd;
 }
