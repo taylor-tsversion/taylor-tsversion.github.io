@@ -328,10 +328,10 @@ main {
 	z-index: 1;
 }
 .slide-2 {
-	background-image: url("/assets/img/anti_hero_video.jpg");
+	background-image: url("/assets/img/bejeweled_hero.jpg");
 }
 .slide-3 {
-	background-image: url("/assets/img/bejeweled_hero.jpg");
+	background-image: url("/assets/img/anti_hero_video.jpg");
 }
 .owl-nav {
 	position: absolute;
