@@ -776,6 +776,7 @@ div.fancybox-progress {
 	display: table;
 }
 .republic {
+	padding: 6.47px 0;
 	max-width: 73px;
 	float: left;
 	margin-right: 8px;
@@ -819,6 +820,7 @@ div.fancybox-progress {
 	padding: 16.5px 32px;
 }
 .fixed-social .social-wrapper {
+	z-index: 3;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -838,6 +840,7 @@ div.fancybox-progress {
 	color: #111d28;
 	border-radius: 50%;
 	font-size: 16px;
+	text-align: center;
 	text-decoration: none;
 	width: 32px;
 	height: 32px;
