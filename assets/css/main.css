@@ -8,6 +8,7 @@ html, body {
 	overflow-x: hidden;
 }
 body {
+	color: #111d28;
 	font-family: "neue-haas-grotesk-text", sans-serif;
 	font-size: 16px;
 	margin: 0;
@@ -412,7 +413,6 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 }
 .bio-wrapper, .note-wrapper .note {
 	background-color: #ebe9e3;
-	color: #111d28;
 	border: solid 1px rgba(17,29,40,.25);
 	box-shadow: 0 0 8px rgba(17,29,40,.125);
 	padding: 28px;
