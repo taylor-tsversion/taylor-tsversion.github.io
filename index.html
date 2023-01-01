@@ -168,7 +168,7 @@
 			</section>
 			<section id="events">
 				<div class="note-wrapper">
-					<h1>Taylor Swift <span>Live</h1>
+					<h1>Taylor Swift <span>Live</span></h1>
 					<div class="events-container">
 					</div>
 				</div>
@@ -612,29 +612,9 @@
 					dots: true,
 					loop: true,
 					mouseDrag: false,
-					//autoplay: true,
-					//autoplayTimeout: 10000,
+					autoplay: true,
+					autoplayTimeout: 10000,
 				})
-				/* $.ajax({
-					url: "/api/tour_dates.json",
-					type: "data/json",
-					success: function(data) {
-						$.each(data, function(key, value){
-							var events = '';
-							events += '<div class="tour-date">';
-							events += '<div class="tour-date-inner">';
-							$(this).find(".tour-date-inner").append('<div class="event-date">' + value.date + '</div>');
-							$(this).find(".tour-date-inner").append('<div class="event-venue">' + value.venue + '</div>');
-							$(this).find(".tour-date-inner").append('<div class="event-city">' + value.city + '</div>');
-							$(this).find(".tour-date-inner").append('<div class="event-reserve"><a href="https://verifiedfan.ticketmaster.com/TaylorSwiftTix">Sign Up</a></div>');
-							$(this).find(".tour-date-inner").append('<div class="event-info"><a href="' + value.urlI + '">More Info</a></div>');
-							$(".events-container").html(events)
-						})
-					},
-					error: function(){
-						alert("fuck it, it does not work")
-					}
-				}) */
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
 						0: {
