@@ -678,7 +678,7 @@
 				})
 				showFooterSocials()
 				function showFooterSocials() {
-					var socialsHeight = $("footer .social-wrapper").outerHeight() - 1
+					var socialsHeight = $("footer .social-wrapper").outerHeight()
 					if($(window).scrollTop() >= socialsHeight) {
 						$("footer").addClass("fixed-social")
 					} else {
