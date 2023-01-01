@@ -357,6 +357,7 @@ main {
 #home .owl-nav button:hover, #news .owl-nav button:hover, #photos .owl-nav button:hover {
 	background-color: #72a4bd;
 	color: #111d28;
+	opacity: 1;
 }
 #home .owl-nav button span, #news .owl-nav button span {
 	position: absolute;
