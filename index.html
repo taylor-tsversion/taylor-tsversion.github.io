@@ -170,6 +170,12 @@
 				<div class="note-wrapper">
 					<h1>Taylor Swift <span>Live</span></h1>
 					<div class="events-container">
+						<ul>
+							<li class="event" data-date="March 17, 2023" data-venue="State Farm Stadium" data-location="Glendale, AZ" data-link="" data-support="Paramore & GAYLE" data-title="Taylor Swift | The Eras Tour">
+								<div class="event-date"></div><div class="event-venue"></div><div class="event-location"></div><div class="event-link"></div>
+								<div class="event-popup"><div class="arrow"></div><div class="header"></div><div class="body"></div><div class="footer"></div></div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -614,6 +620,37 @@
 					mouseDrag: false,
 					autoplay: true,
 					autoplayTimeout: 10000,
+				})
+				$(".events-container .event").each(function(){
+					var eventDate = $(this).data("date")
+					var eventVenue = $(this).data("venue")
+					var eventLocation = $(this).data("location")
+					var eventLink = $(this).data("link")
+					var eventSupport = $(this).data("support")
+					var eventTitle = $(this).data("title")
+					
+					var eventLinkCode;
+					if(eventLink == "" || eventLink == "false") {
+						eventLinkCode = '<span class="sold-out">Sold out</span>'
+					} else {
+						eventLinkCode = '<a href="' + eventLink + '" target="_blank" rel="nor">Tickets</a>'
+					}
+					
+					var popupBody;
+					if(eventSupport == "" || eventSupport == null) {
+						popupBody = '<div class="popup-title">' + eventTitle '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventLocation + '</div>';
+					} else {
+						popupBody = '<div class="popup-title">' + eventTitle '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventLocation + '</div><div class="popup-opening"><strong>With special guests:</strong><br>' + eventTitle + '</div>;
+					}
+					
+					$(this).find(".event-date").html(eventDate)
+					$(this).find(".event-venue").html(eventVenue)
+					$(this).find(".event-location").html(eventLocation)
+					$(this).find(".event-link").html(eventLinkCode)
+					
+					$(this).find(".event-popup .header").html("Event Info")
+					$(this).find(".event-popup .body").html(popupBody)
+					$(this).find(".event-popup .footer").html('<div class="presented-by"><span>Presented by</span><img src="/assets/img/capital_one.png" alt="Capital One" width="60" height="22"></div>')
 				})
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
