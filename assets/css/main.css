@@ -286,14 +286,13 @@ main {
 	display: inline-block;
 	z-index: 1;
 }
-.slide-2 {
-	background-image: url("/assets/img/anti_hero_video.jpg");
+.slide-2, .slide-3 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
 }
-.slide-2:after {
+.slide-2:after, .slide-3:after {
 	content: "";
 	background-color: rgba(0,0,0,.5);
 	position: absolute;
@@ -302,7 +301,7 @@ main {
 	width: 100%;
 	height: 100%;
 }
-.slide-2 .slide-layer.layer-1 {
+.slide-2 .slide-layer.layer-1, .slide-3 .slide-layer.layer-1 {
 	color: #ebe9e3;
 	text-transform: uppercase;
 	text-align: center;
@@ -313,13 +312,13 @@ main {
 	max-width: 398.99px;
 	z-index: 1;
 }
-.slide-2 .slide-layer.layer-1 .layer-1-header {
+.slide-2 .slide-layer.layer-1 .layer-1-header, .slide-3 .slide-layer.layer-1 .layer-1-header {
 	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
-.slide-2 a {
+.slide-2 a, .slide-3 a {
 	text-decoration: none;
 	position: absolute;
 	left: 0;
@@ -327,6 +326,12 @@ main {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
+}
+.slide-2 {
+	background-image: url("/assets/img/anti_hero_video.jpg");
+}
+.slide-3 {
+	background-image: url("/assets/img/bejeweled_hero.jpg");
 }
 .owl-nav {
 	position: absolute;
