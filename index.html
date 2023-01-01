@@ -673,6 +673,16 @@
 						$("ul.instagram").removeClass("owl-carousel").trigger("destroy.owl.carousel")
 					}
 				}
+				$(window).on("scroll", function(){
+					showFooterSocials();
+				})
+				showFooterSocials()
+				function showFooterSocials() {
+					var socialsHeight = $("footer .social-wrapper").outerHeight()
+					if($(window).scrollTop() >= socialsHeight) {
+						$("footer").addClass("fixed-social")
+					} 
+				}
 			})
 		</script>
 	</body>
