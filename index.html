@@ -638,21 +638,10 @@
 					}
 					console.log(eventLinkCode)
 					
-					var popupBody;
-					if(eventSupport == "" || eventSupport == null) {
-						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventLocation + '</div><div class="popup-link">' + eventLinkCode + '</div>';
-					} else {
-						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventLocation + '</div><div class="popup-opening"><strong>With special guests:</strong><br>' + '</div><div class="popup-link">' + eventLinkCode + '</div>';
-					}
-					
 					$(this).find(".event-date").html(eventDate)
 					$(this).find(".event-venue").html(eventVenue)
 					$(this).find(".event-location").html(eventLocation)
 					$(this).find(".event-link").html(eventLinkCode)
-					
-					$(this).find(".event-popup .header").html("Event Info")
-					$(this).find(".event-popup .body").html(popupBody)
-					$(this).find(".event-popup .footer").html('<div class="presented-by"><span>Presented by</span><img src="/assets/img/capital_one.png" alt="Capital One" width="60" height="22"></div>')
 				})
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
