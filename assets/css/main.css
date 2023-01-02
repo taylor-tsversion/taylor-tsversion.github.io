@@ -455,6 +455,7 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 }
 #events .overlay {
 	background-color: #111d28;
+	opacity: .5;
 	position: absolute;
 	left: 0;
 	top: 0;
