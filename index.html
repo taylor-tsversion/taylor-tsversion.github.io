@@ -631,23 +631,25 @@
 					var eventTitle = $(this).data("title")
 					
 					var eventLinkCode;
-					if(eventLink == "" || eventLink == "false") {
-						eventLinkCode = '<span class="sold-out">Sold out</span>'
+					var eventInfoCode;
+					if(eventLink == null || eventLink == "" || eventLink == "false") {
+						eventLinkCode = '<div class="popup-tickets sold-out"><span class="sold-out">Sold out</span></div>'
 					} else {
-						eventLinkCode = '<a href="' + eventLink + '" target="_blank">Tickets</a>'
+						eventLinkCode = '<div class="popup-tickets available"><a href="' + eventLink + '" target="_blank">Tickets</a></div>'
 					}
-					console.log(eventLinkCode)
+					
+					if(eventInfo !== null || eventInfo !== "" || eventInfo !== "false") {
+						eventInfoCode = '<div class="popup-info"><a href="' + eventInfo + '" target="_blank">More Info</a></div>'
+					}
 					
 					$(this).find(".event-date").html(eventDate)
-					$(this).find(".event-venue").html(eventVenue)
 					$(this).find(".event-location").html(eventLocation)
-					$(this).find(".event-link").html(eventLinkCode)
 					
 					var popupBody;
 					if(eventSupport == "" || eventSupport == null) {
-						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-link">' + eventLinkCode + '</div>';
+						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-link">' + eventLinkCode + eventInfoCode + '</div>';
 					} else {
-						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-opening"><strong>With special guests:</strong><br>'  + eventSupport + '</div><div class="popup-link">' + eventLinkCode + '</div>';
+						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-opening"><strong>With special guests:</strong><br>'  + eventSupport + '</div><div class="popup-link">' + eventLinkCode + eventInfoCode + '</div>';
 					}					
 					$(this).find(".event-popup .header").html("Event Info")
 					$(this).find(".event-popup .body").html(popupBody)
