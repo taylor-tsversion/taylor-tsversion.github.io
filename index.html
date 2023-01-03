@@ -624,20 +624,21 @@
 				})
 				$("#events .events-container .event").each(function(){
 					var eventDate = $(this).data("date")
-					var eventVenue = $(this).data("venue")
 					var eventLocation = $(this).data("location")
-					var eventLink = $(this).data("link")
-					var eventSupport = $(this).data("support")
 					var eventTitle = $(this).data("title")
+					var eventVenue = $(this).data("venue")
+					var eventSupport = $(this).data("support")
+					var eventLink = $(this).data("link")
+					var eventInfo = $(this).data("info")
 					
 					var eventLinkCode;
-					var eventInfoCode;
 					if(eventLink == null || eventLink == "" || eventLink == "false") {
 						eventLinkCode = '<div class="popup-tickets sold-out"><span class="sold-out">Sold out</span></div>'
 					} else {
 						eventLinkCode = '<div class="popup-tickets available"><a href="' + eventLink + '" target="_blank">Tickets</a></div>'
 					}
 					
+					var eventInfoCode;
 					if(eventInfo !== null || eventInfo !== "" || eventInfo !== "false") {
 						eventInfoCode = '<div class="popup-info"><a href="' + eventInfo + '" target="_blank">More Info</a></div>'
 					}
