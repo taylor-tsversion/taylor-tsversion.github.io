@@ -486,20 +486,22 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	margin: 0;
 }
 #events .events-container ul .event {
+	position: relative;
+}
+#events .events-container ul .event .event-inner {
 	background-color: rgba(17, 29, 40, .75);
 	color: #ebe9e3;
 	border: solid 1px #ebe9e3;
 	padding: 20px 25px;
 	margin-bottom: 12px;
-	position: relative;
 	height: 62px;
 	cursor: pointer;
 }
-#events .events-container ul .event:hover {
+#events .events-container ul .event .event-inner:hover {
 	background-color: #111d28;
 }
 #events .events-container ul .event .event-date, #events .events-container ul .event .event-location {
-	line-height: 22px;
+	line-height: 20px;
 }
 #events .events-container ul .event .event-location {
 	color: #ae9fb1;
