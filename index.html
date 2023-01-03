@@ -648,9 +648,9 @@
 					
 					var popupBody;
 					if(eventSupport == "" || eventSupport == null) {
-						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-link">' + eventLinkCode + eventInfoCode + '</div>';
+						popupBody = '<div class="popup-title">' + eventTitle + '<div class="popup-separator"></div></div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-link">' + eventLinkCode + eventInfoCode + '</div>';
 					} else {
-						popupBody = '<div class="popup-title">' + eventTitle + '</div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-opening"><strong>With special guests:</strong><br>'  + eventSupport + '</div><div class="popup-link">' + eventLinkCode + eventInfoCode + '</div>';
+						popupBody = '<div class="popup-title">' + eventTitle + '<div class="popup-separator"></div></div><div class="popup-date">' + eventDate + '</div><div class="popup-location">' + eventVenue + '<br>' + eventLocation + '</div><div class="popup-opening"><strong>With special guests:</strong><br>'  + eventSupport + '</div><div class="popup-link">' + eventLinkCode + eventInfoCode + '</div>';
 					}					
 					$(this).find(".event-popup .header").html("Event Info")
 					$(this).find(".event-popup .body").html(popupBody)
