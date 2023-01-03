@@ -466,7 +466,6 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	max-width: 550px;
 	margin-left: auto;
 	position: relative;
-	z-index: 1;
 }
 .note-wrapper h1 {
 	color: #ebe9e3;
@@ -486,18 +485,21 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	margin: 0;
 }
 #events .events-container ul .event {
+	margin-bottom: 12px;
 	position: relative;
+}
+#events .events-container ul .event.last {
+	margin-bottom: 0;
 }
 #events .events-container ul .event .event-inner {
 	background-color: rgba(17, 29, 40, .75);
 	color: #ebe9e3;
 	border: solid 1px #ebe9e3;
 	padding: 20px 25px;
-	margin-bottom: 12px;
 	height: 62px;
 	cursor: pointer;
 }
-#events .events-container ul .event .event-inner:hover {
+#events .events-container ul .event .event-inner:hover, #events .events-container ul .event.event-active .event-inner  {
 	background-color: #111d28;
 }
 #events .events-container ul .event .event-date, #events .events-container ul .event .event-location {
@@ -513,6 +515,23 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	position: absolute;
 	right: 25px;
 	top: 20px;
+}
+#events .events-container ul .event .event-popup {
+	width: 100%;
+	max-width: 352px;
+}
+#events .events-container ul .event .event-popup .popup .header {
+	background-color: #ae9fb1;
+	color: #111d28;
+	border-bottom: 1px solid #5f5e6d;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 12px 20px;
+}
+#events .events-container ul .event .event-popup .popup .body {
+	background-color: #ebe9e3;
+	padding: 16px 20px;
 }
 #news {
 	padding: 24px;
