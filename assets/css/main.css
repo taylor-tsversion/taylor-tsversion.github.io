@@ -520,18 +520,27 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	width: 100%;
 	max-width: 352px;
 }
-#events .events-container ul .event .event-popup .popup .header {
+#events .events-container ul .event .event-popup .header {
 	background-color: #ae9fb1;
 	color: #111d28;
 	border-bottom: 1px solid #5f5e6d;
 	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-size: 18px;
 	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .5px;
 	padding: 12px 20px;
 }
-#events .events-container ul .event .event-popup .popup .body {
+#events .events-container ul .event .event-popup .body {
 	background-color: #ebe9e3;
 	padding: 16px 20px;
+}
+#events .events-container ul .event .event-popup .body .popup-title {
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 #news {
 	padding: 24px;
