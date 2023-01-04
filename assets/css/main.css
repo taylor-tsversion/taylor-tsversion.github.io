@@ -494,7 +494,7 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 #events .events-container ul .event .event-inner {
 	background-color: rgba(17, 29, 40, .75);
 	color: #ebe9e3;
-	border: solid 1px #ebe9e3;
+	border: 1px solid #ebe9e3;
 	padding: 20px 25px;
 	height: 62px;
 	cursor: pointer;
@@ -545,7 +545,7 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 }
 #events .events-container ul .event .event-popup .body .popup-title .popup-separator {
 	background-color: #58618c;
-	margin-top: 4px;
+	margin-top: 6px;
 	width: 48px;
 	height: 5px;
 }
@@ -554,7 +554,7 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	font-weight: 700;
 }
 #events .events-container ul .event .event-popup .body .popup-date {
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 }
 #events .events-container ul .event .event-popup .body .popup-location, #events .events-container ul .event .event-popup .body .popup-opening {
 	margin-bottom: 12px;
