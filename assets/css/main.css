@@ -540,7 +540,24 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: .25px;
+	margin-bottom: 12px;
+}
+#events .events-container ul .event .event-popup .body .popup-title .popup-separator {
+	background-color: #58618c;
+	margin-top: 4px;
+	width: 48px;
+	height: 5px;
+}
+#events .events-container ul .event .event-popup .body .popup-date, #events .events-container ul .event .event-popup .body strong {
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 700;
+}
+#events .events-container ul .event .event-popup .body .popup-date {
+	margin-bottom: 8px;
+}
+#events .events-container ul .event .event-popup .body .popup-location, #events .events-container ul .event .event-popup .body .popup-opening {
+	margin-bottom: 12px;
 }
 #news {
 	padding: 24px;
