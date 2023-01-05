@@ -605,6 +605,7 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	background-image: url("/assets/img/night_clouds_bg.jpeg");
 	background-position: center;
 	background-size: cover;
+	padding: 8px 20px;
 }
 #events .events-container ul .event .event-popup .footer .presented-by:after {
 	content: "";
@@ -614,9 +615,11 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 #events .events-container ul .event .event-popup .footer .presented-by span {
 	color: #ebe9e3;
 	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-size: 12px;
 	font-weight: 700;
 	text-transform: capitalize;
 	line-height: 22px;
+	float: left;
 }
 #events .events-container ul .event .event-popup .footer .presented-by img {
 	float: right;
