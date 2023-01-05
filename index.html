@@ -657,6 +657,13 @@
 					$(this).find(".event-popup .footer").html('<div class="presented-by"><span>Presented by</span><img src="/assets/img/capital_one.png" alt="Capital One" width="60" height="22"></div>')
 				})
 				$("#events .events-container .event").last().addClass("last")
+				$("#events .events-container .event").click(function(){
+					$(this).find(".event-popup").fadeToggle(500)
+					if(Modernizr.csstransitions) {
+						$(this).addClass("event-active")
+					}
+					// Tomorrow we're working on <=IE9 compatibility. We are keeping IE10+ compatibility for today. It's 01:34 AM.
+				})
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
 						0: {
