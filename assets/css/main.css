@@ -497,9 +497,10 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	border: 1px solid #ebe9e3;
 	padding: 20px 25px;
 	height: 62px;
+	transition: .5s;
 	cursor: pointer;
 }
-#events .events-container ul .event .event-inner:hover, #events .events-container ul .event.event-active .event-inner  {
+#events .events-container ul .event .event-inner:hover, #events .events-container ul .event.event-active .event-inner {
 	background-color: #111d28;
 }
 #events .events-container ul .event .event-date, #events .events-container ul .event .event-location {
@@ -517,8 +518,21 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 	top: 20px;
 }
 #events .events-container ul .event .event-popup {
+	z-index: 2;
+	position: absolute;
+	top: 7px;
+	left: -372px;
 	width: 100%;
 	max-width: 352px;
+	display: none;
+}
+#events .events-container ul .event .event-popup .arrow {
+	border-width: 16px 0 16px 16px;
+	border-style: solid;
+	border-color: transparent transparent transparent #ae9fb1;
+	position: absolute;
+	right: -16px;
+	top: 8px;
 }
 #events .events-container ul .event .event-popup .header {
 	background-color: #ae9fb1;
@@ -558,6 +572,33 @@ div.owl-dots button.owl-dot:hover, div.owl-dots button.owl-dot.active {
 }
 #events .events-container ul .event .event-popup .body .popup-location, #events .events-container ul .event .event-popup .body .popup-opening {
 	margin-bottom: 12px;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-tickets, #events .events-container ul .event .event-popup .body .popup-link .popup-info {
+	font-size: 20px;
+	display: inline-block;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-tickets {
+	font-family: 'neue-haas-grotesk-display', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	margin-right: 16px;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-tickets a, #events .events-container ul .event .event-popup .body .popup-link .popup-tickets .sold-out {
+	color: #58618c;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-tickets a {
+	text-decoration: none;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-tickets .sold-out {
+	text-decoration: line-through #58618c solid 2px;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-info a {
+	color: #111d28;
+	text-decoration: none;
+}
+#events .events-container ul .event .event-popup .body .popup-link .popup-info a:hover {
+	color: #7e8385;
 }
 #news {
 	padding: 24px;
