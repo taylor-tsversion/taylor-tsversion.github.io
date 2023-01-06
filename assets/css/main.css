@@ -106,8 +106,7 @@ header .empty-posts .empty {
 	z-index: 3;
 	overflow: hidden;
 }
-.navbar-wrapper:before {
-	content: "";
+.navbar-wrapper .ts-header-deco .wide {
 	background-color: rgba(174, 159, 177, .2);
 	width: 70px;
 	height: 250%;
@@ -116,8 +115,7 @@ header .empty-posts .empty {
 	top: -55px;
 	transform: rotate(45deg);
 }
-.navbar-wrapper:after {
-	content: "";
+.navbar-wrapper .ts-header-deco .narrow {
 	background-color: rgba(174, 159, 177, .1);
 	width: 20px;
 	height: 250%;
