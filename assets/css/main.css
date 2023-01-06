@@ -113,6 +113,7 @@ header .empty-posts .empty {
 	height: 250%;
 	position: absolute;
 	left: 189.4995px;
+	top: -55px;
 	transform: rotate(45deg);
 }
 .navbar-wrapper:after {
@@ -122,6 +123,7 @@ header .empty-posts .empty {
 	height: 250%;
 	position: absolute;
 	left: 284.24925px;
+	top: -55px;
 	transform: rotate(45deg);
 }
 .navbar-wrapper a.ts-logo-wrapper {
