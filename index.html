@@ -624,11 +624,7 @@
 					autoplay: true,
 					autoplayTimeout: 10000,
 				})
-				$("#events .events-container .event").each(function(){
-					if(!Modernizr.rgba) {
-						$("#events .events-container .event .event-inner").prepend('<div class="event-bg"></div>')
-					}
-					
+				$("#events .events-container .event").each(function(){					
 					var eventDate = $(this).data("date")
 					var eventLocation = $(this).data("location")
 					var eventTitle = $(this).data("title")
