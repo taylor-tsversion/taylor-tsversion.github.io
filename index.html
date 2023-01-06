@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<title>Taylor Swift</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta http-equiv="X-UA-Compatibile" content="IE=9">
 
 		<!-- SEO? -->
 		<meta name="author" content="Ala Barca">
@@ -660,73 +659,13 @@
 					$(this).find(".event-popup .footer").html('<div class="presented-by"><span>Presented by</span><img src="/assets/img/capital_one.png" alt="Capital One" width="60" height="22"></div>')
 				})
 				$("#events .events-container .event").last().addClass("last")
-				if(Modernizr.csstransitions) {
-					$("#events .events-container .event").click(function(){
-						$(this).find(".event-popup").fadeToggle(500);
-						$(this).toggleClass("event-active");
-					})
-				} else {
-					if(!Modernizr.touch) {
-						$("#events .events-container .event").each(function(){
-							if(!Modernizr.rgba) {
-								$(this).find(".event-inner").append('<div class="event-bg"></div>');
-							}
-							if(!$(this).hasClass("event-active")){
-								var unHovered = true;
-								$(this).hover(function(){
-									if(unHovered) {
-										if(Modernizr.rgba) {
-											$(this).find(".event-inner").animate({
-												backgroundColor: "rgba(17, 29, 40, .75)"
-											});
-										} else {
-											$(this).find(".event-inner .event-bg").animate({
-												opacity: .75
-											});
-										};
-									} else {
-										if(Modernizr.rgba) {
-											$(this).find(".event-inner").animate({
-												backgroundColor: "#111d28"
-											});
-										} else {
-											$(this).find(".event-inner .event-bg").animate({
-												opacity: 1
-											});
-										};
-									};
-								});
-							} else {
-								if(!Modernizr.rgba) {
-									$(this).find(".event-inner .event-bg").animate({
-										opacity: 1
-									})
-								} else {
-									$(this).find(".event-inner").animate({
-										backgroundColor: "#ff0000"
-									})
-								}
-							}
-						})
-					}
-					$("#events .events-container .event").click(function(){
-						$(this).find(".event-popup").fadeToggle(500)
-						var delay;
-						setTimeout(function(){
-							if($(this).hasClass("event-active")) {
-								$(this).removeClass("event-active")
-							} else {
-								$(this).addClass("event-active")
-							}
-						}, delay)
-						if($(this).is(":hover")) {
-							delay = 500
-						} else {
-							delay = 0
-						}
-					})
+				$("#events .events-container .event").click(function(){
+					$(this).find(".event-popup").fadeToggle(500);
+					$(this).toggleClass("event-active");
+				})
+				if(!Modernizr.rgba) {
+					$("#events .events-container .event .event-inner").prepend('<div class="event-bg"></div>')
 				}
-				Modernizr.csstransitions = false
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
 						0: {
