@@ -625,6 +625,10 @@
 					autoplayTimeout: 10000,
 				})
 				$("#events .events-container .event").each(function(){
+					if(!Modernizr.rgba) {
+						$("#events .events-container .event .event-inner").prepend('<div class="event-bg"></div>')
+					}
+					
 					var eventDate = $(this).data("date")
 					var eventLocation = $(this).data("location")
 					var eventTitle = $(this).data("title")
@@ -663,9 +667,6 @@
 					$(this).find(".event-popup").fadeToggle(500);
 					$(this).toggleClass("event-active");
 				})
-				if(!Modernizr.rgba) {
-					$("#events .events-container .event .event-inner").prepend('<div class="event-bg"></div>')
-				}
 				$("#news .owl-carousel").owlCarousel({
 					responsive: {
 						0: {
