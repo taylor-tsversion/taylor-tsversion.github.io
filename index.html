@@ -68,6 +68,10 @@
 			</div>
 			<div class="navbar-wrapper">
 				<a href="/" title="Taylor Swift" class="ts-logo-wrapper"><img src="/assets/img/ts_logo.png" class="ts-logo" alt="Taylor Swift"></a>
+				<div class="ts-header-deco">
+					<div class="wide"></div>
+					<div class="narrow"></div>
+				</div>
 				<span class="nav-toggler">
 					<span class="bar-1"></span>
 					<span class="bar-2"></span>
@@ -717,7 +721,7 @@
 					if($(window).scrollTop() > socialsHeight) {
 						$("footer").addClass("fixed-social")
 					} else {
-						$("footer").removeClass("fixed-social")
+						$("footer").removeAttr("class")
 					}
 				}
 			})
